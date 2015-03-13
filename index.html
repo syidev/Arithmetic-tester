@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#test" aria-controls="test" role="tab" data-toggle="tab">Проверка</a></li>
+    <li role="presentation"><a href="#setting" aria-controls="setting" role="tab" data-toggle="tab">Установка</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="test">
+    <br/>
+    <form class="form-inline">
+              <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Пример</h3>
+                            </div>
+                          <div id="example" class="panel-body">...</div>
+              </div>
+                        <button id="btn-test" type="button" class="btn btn-primary">Сгенерировать</button>
+                        <br/>
+                        <br/>
+              <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Ваш ответ</h3>
+                          </div>
+                          <div id="example" class="panel-body">
+                            <input id="useransw" type="text" class="form-control" value="" placeholder="...">
+                          </div>
+              </div>
+                        <button id="btn-check" type="button" class="btn btn-primary">Отправить</button>
+
+                        <h3><span id="corran" class="label label-success">0</span> &mdash; правильных ответов </h3>
+                        <h3><span id="incorran" class="label label-danger">0</span> &mdash; неправильных ответов </h3>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="setting"><br/>Выберите тип арифметических проверок:<hr/>
+
+      <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked> сложение
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="options" id="option2" autocomplete="off"> вычитание
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="options" id="option3" autocomplete="off"> умножение
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="options" id="option4" autocomplete="off"> деление
+          </label>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</div>
+  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
