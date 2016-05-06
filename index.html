@@ -2,67 +2,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Arithmetic tester</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 <body>
 
-<div class="container">
-<div role="tabpanel">
+<div class="container-fluid">
+<h1 class="text-center">Arithmetic tester</h1>
+<div class="col-sm-4 col-sm-offset-4" role="tabpanel">
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#test" aria-controls="test" role="tab" data-toggle="tab">Проверка</a></li>
-    <li role="presentation"><a href="#setting" aria-controls="setting" role="tab" data-toggle="tab">Установка</a></li>
+    <li role="presentation" class="active"><a href="#test" aria-controls="test" role="tab" data-toggle="tab">Test</a></li>
+    <li role="presentation"><a href="#setting" aria-controls="setting" role="tab" data-toggle="tab">Setup</a></li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="test">
-    <br/>
-    <form class="form-inline">
-              <div class="panel panel-default">
-                          <div class="panel-heading">
-                            <h3 class="panel-title">Пример</h3>
-                            </div>
-                          <div id="example" class="panel-body">...</div>
-              </div>
-                        <button id="btn-test" type="button" class="btn btn-primary">Сгенерировать</button>
-                        <br/>
-                        <br/>
-              <div class="panel panel-default">
-                          <div class="panel-heading">
-                            <h3 class="panel-title">Ваш ответ</h3>
-                          </div>
-                          <div id="example" class="panel-body">
-                            <input id="useransw" type="text" class="form-control" value="" placeholder="...">
-                          </div>
-              </div>
-                        <button id="btn-check" type="button" class="btn btn-primary">Отправить</button>
 
-                        <h3><span id="corran" class="label label-success">0</span> &mdash; правильных ответов </h3>
-                        <h3><span id="incorran" class="label label-danger">0</span> &mdash; неправильных ответов </h3>
+    <div role="tabpanel" class="tab-pane active" id="test">
+    <br>
+    <form class="form-inline">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Example</h3>
+          </div>
+        <div id="example" class="panel-body">...</div>
+      </div>
+      <button id="btn-test" type="button" class="btn btn-primary">Generate</button>
+      <br>
+      <br>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <p class="panel-title">You answer</p>
+        </div>
+        <div id="example" class="panel-body">
+          <input id="useransw" type="text" class="form-control" value="" placeholder="...">
+        </div>
+      </div>
+      <button id="btn-check" type="button" class="btn btn-primary">Send</button>
+      <br>
+      <br>             
+      <p><span id="corran" class="label label-success">0</span> &mdash; correct answers</p>
+      <p><span id="incorran" class="label label-danger">0</span> &mdash; incorrect answers</p>
     </div>
 
-    <div role="tabpanel" class="tab-pane" id="setting"><br/>Выберите тип арифметических проверок:<hr/>
-
+    <div role="tabpanel" class="tab-pane" id="setting">
+      <br>
+      <p>Select the type of arithmetic tests :</p>
       <div class="btn-group" data-toggle="buttons">
           <label class="btn btn-primary active">
-            <input type="radio" name="options" id="option1" autocomplete="off" checked> сложение
+            <input type="radio" name="options" id="option1" autocomplete="off" checked>addition
           </label>
           <label class="btn btn-primary">
-            <input type="radio" name="options" id="option2" autocomplete="off"> вычитание
+            <input type="radio" name="options" id="option2" autocomplete="off">substraction
           </label>
           <label class="btn btn-primary">
-            <input type="radio" name="options" id="option3" autocomplete="off"> умножение
+            <input type="radio" name="options" id="option3" autocomplete="off">multiplication
           </label>
           <label class="btn btn-primary">
-            <input type="radio" name="options" id="option4" autocomplete="off"> деление
+            <input type="radio" name="options" id="option4" autocomplete="off">division
           </label>
       </div>
-
     </div>
+
   </div>
 
 </div>
@@ -70,7 +74,7 @@
 </div>
   <script src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
 

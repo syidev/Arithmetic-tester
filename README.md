@@ -1,1 +1,1 @@
-Приложение на JavaScript, для тестирования знаний элементарных арифметических действий, с использованием Bootstrap.
+The app in JavaScript, to test knowledge of elementary arithmetic.
